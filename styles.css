@@ -94,6 +94,7 @@ img {
   outline: 0;
   cursor: pointer;
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 .btn--primary {
   color: var(--color-bright-orange);
@@ -128,4 +129,9 @@ img {
   font-size: 1.1rem;
   margin-bottom: 5rem;
   opacity: 70%;
+}
+@media screen and (min-width: 768px) {
+  .card__text {
+    font-size: 1.5rem;
+  }
 }
