@@ -1,0 +1,130 @@
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--color-bacground);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 1.5;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%);
+  --color-very-dark-cyan: hsl(179, 100%, 13%);
+  --color-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --color-bacground: hsl(0, 0%, 95%);
+
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Big Shoulders Display";
+  margin: 1rem;
+  color: var(--color-bacground);
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+}
+img {
+  width: 100%;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  min-width: 70vw;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    height: 70vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 45px 10px;
+  }
+}
+
+/* Boxes */
+.box {
+  padding: 3rem 2rem;
+  width: 20rem;
+}
+.box--one {
+  background-color: var(--color-bright-orange);
+}
+@media screen and (min-width: 768px) {
+  .box--one {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+.box--two {
+  background-color: var(--color-dark-cyan);
+}
+.box--three {
+  background-color: var(--color-very-dark-cyan);
+}
+@media screen and (min-width: 768px) {
+  .box--three {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+/* Buttons */
+.btn {
+  border-radius: 20px;
+  padding: 1.2rem 2.5rem;
+  background-color: var(--color-bacground);
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+.btn--primary {
+  color: var(--color-bright-orange);
+}
+.btn--secondary {
+  color: var(--color-dark-cyan);
+}
+.btn--accent {
+  color: var(--color-very-dark-cyan);
+}
+.btn:hover {
+  color: var(--color-bacground);
+  border: 1px solid var(--color-bacground);
+  background-color: transparent;
+}
+/* Cards */
+.card__image {
+  width: 5rem;
+}
+.card__heading {
+  color: var(--color-bacground);
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .card__heading {
+    font-size: 4rem;
+  }
+}
+.card__text {
+  color: var(--color-paragraphs);
+  font-size: 1.1rem;
+  margin-bottom: 5rem;
+  opacity: 70%;
+}
