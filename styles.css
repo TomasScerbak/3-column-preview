@@ -46,8 +46,10 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 5px;
   min-width: 70vw;
+  height: 60vh;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -128,7 +130,7 @@ img {
   color: var(--color-paragraphs);
   font-size: 1.1rem;
   margin-bottom: 5rem;
-  opacity: 70%;
+  opacity: 80%;
 }
 @media screen and (min-width: 768px) {
   .card__text {
