@@ -43,9 +43,7 @@ Users should be able to:
 ```HTML
 Semantic TAGs
     <main></main>
-```HTML
 
-```CSS
 Using BEM convention
           <div class="box box--one">
             <img class="card__image" src="Images/icon-sedans.svg" alt="car" />
