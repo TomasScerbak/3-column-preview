@@ -43,6 +43,8 @@ Users should be able to:
 ```HTML
 Semantic TAGs
     <main></main>
+```HTML
+
 ```CSS
 Using BEM convention
           <div class="box box--one">
@@ -64,6 +66,7 @@ New border box properties for individual boxes
                border-top-left-radius: 10px;
                border-top-right-radius: 10px;
               }
+```CSS
               
 ### Continued development
 
