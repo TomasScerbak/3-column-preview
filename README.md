@@ -6,15 +6,12 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -49,6 +46,8 @@ Using BEM convention
             <img class="card__image" src="Images/icon-sedans.svg" alt="car" />
             <h1 class="card__heading">Sedans</h1>
             <div>
+```
+
 ```CSS
 How to use FLEXBOX
             .container {
@@ -58,14 +57,15 @@ How to use FLEXBOX
               justify-content: center;
               margin: 5rem 2rem;
             }
-```CSS
+
 New border box properties for individual boxes
              .box--one {
                background-color: var(--color-bright-orange);
                border-top-left-radius: 10px;
                border-top-right-radius: 10px;
               }
-              
+```
+
 ### Continued development
 
 I will keep practicing HTML best practicies, learning and sorting accessibility issues. Continue learning FLEXBOX capabilities.
