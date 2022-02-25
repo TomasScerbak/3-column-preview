@@ -4,12 +4,7 @@ html {
 }
 body {
   background-color: var(--color-bacground);
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   line-height: 1.5;
 }
 *,
@@ -31,8 +26,8 @@ h1,
 h2,
 h3 {
   font-family: "Big Shoulders Display";
-  margin: 1rem;
   color: var(--color-bacground);
+  margin: 1rem 0;
 }
 p {
   font-family: "Lexend Deca", sans-serif;
@@ -40,50 +35,65 @@ p {
 img {
   width: 100%;
 }
-
+/* Body Wrapper */
+.body-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Container */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: ce;
-  border-radius: 5px;
-  min-width: 70vw;
+  justify-content: center;
+  margin: 5rem 2rem;
 }
 @media screen and (min-width: 768px) {
+  .body-wrapper {
+    height: 100vh;
+  }
   .container {
     height: 70vh;
+    width: 70vw;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 45px 10px;
+    padding: 0 10rem;
   }
 }
 
 /* Boxes */
 .box {
-  padding: 3rem 2rem;
-  width: 20rem;
+  padding: 5rem 3rem;
 }
 .box--one {
   background-color: var(--color-bright-orange);
-}
-@media screen and (min-width: 768px) {
-  .box--one {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .box--two {
   background-color: var(--color-dark-cyan);
 }
 .box--three {
   background-color: var(--color-very-dark-cyan);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 @media screen and (min-width: 768px) {
+  .box {
+    width: 50vh;
+  }
+  .box--one {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
   .box--three {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
   }
 }
 /* Buttons */
@@ -118,21 +128,19 @@ img {
 .card__heading {
   color: var(--color-bacground);
   text-transform: uppercase;
-  font-size: 3rem;
-}
-@media screen and (min-width: 768px) {
-  .card__heading {
-    font-size: 4rem;
-  }
+  font-size: 4rem;
 }
 .card__text {
   color: var(--color-paragraphs);
-  font-size: 1.1rem;
-  margin-bottom: 5rem;
+  font-size: 1.5rem;
+  margin-bottom: 7rem;
   opacity: 80%;
 }
 @media screen and (min-width: 768px) {
   .card__text {
     font-size: 1.5rem;
+  }
+  .card__heading {
+    font-size: 3.5rem;
   }
 }
