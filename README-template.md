@@ -51,7 +51,7 @@ Using BEM convention
             <img class="card__image" src="Images/icon-sedans.svg" alt="car" />
             <h1 class="card__heading">Sedans</h1>
             <div>
-
+```CSS
 How to use FLEXBOX
             .container {
               display: flex;
@@ -60,13 +60,13 @@ How to use FLEXBOX
               justify-content: center;
               margin: 5rem 2rem;
             }
+```CSS
 New border box properties for individual boxes
              .box--one {
                background-color: var(--color-bright-orange);
                border-top-left-radius: 10px;
                border-top-right-radius: 10px;
               }
-```CSS
               
 ### Continued development
 
