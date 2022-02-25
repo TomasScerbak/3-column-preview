@@ -40,10 +40,10 @@ Users should be able to:
 - Mobile-first workflow
   
 ### What I learned
-
+```HTML
 Semantic TAGs
     <main></main>
-
+```CSS
 Using BEM convention
           <div class="box box--one">
             <img class="card__image" src="Images/icon-sedans.svg" alt="car" />
