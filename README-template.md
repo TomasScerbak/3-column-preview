@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://github.com/TomasScerbak/3-column-preview.git)
+- Live Site URL: (https://tomasscerbak.github.io/3-column-preview/)
 
 ## My process
 
@@ -40,15 +40,16 @@ Users should be able to:
 - Mobile-first workflow
   
 ### What I learned
-``HTML Semantic TAGs
+
+Semantic TAGs
     <main></main>
-```HTML
+
 Using BEM convention
           <div class="box box--one">
             <img class="card__image" src="Images/icon-sedans.svg" alt="car" />
             <h1 class="card__heading">Sedans</h1>
             <div>
-```CSS
+
 How to use FLEXBOX
             .container {
               display: flex;
@@ -57,7 +58,13 @@ How to use FLEXBOX
               justify-content: center;
               margin: 5rem 2rem;
             }
-
+New border box properties for individual boxes
+             .box--one {
+               background-color: var(--color-bright-orange);
+               border-top-left-radius: 10px;
+               border-top-right-radius: 10px;
+              }
+              
 ### Continued development
 
 I will keep practicing HTML best practicies, learning and sorting accessibility issues. Continue learning FLEXBOX capabilities.
